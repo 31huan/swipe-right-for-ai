@@ -1,0 +1,135 @@
+/* 全螢幕置中 */
+.app-root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f6f9;
+  padding: 20px;
+}
+
+/* 容器置中 */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #111;
+}
+
+.card-area {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* 卡片 */
+.card {
+  background: white;
+  width: 100%;
+  max-width: 380px;
+  height: 340px;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  cursor: grab;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card:active {
+  cursor: grabbing;
+}
+
+.card-count {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: left;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 圖片/影片大小 */
+.card-media {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+/* 音樂播放器 */
+.audio-player {
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* popup */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  background: white;
+  width: 90%;
+  max-width: 350px;
+  padding: 24px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.popup-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.popup-text {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.popup-button {
+  margin-top: 20px;
+  background: #111;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
